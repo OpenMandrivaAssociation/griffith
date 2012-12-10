@@ -70,3 +70,10 @@ desktop-file-install --vendor="" \
 %{_mandir}/man1/griffith.1.*
 %config(noreplace) %{_sysconfdir}/bash_completion.d/griffith
 
+
+
+%changelog
+* Tue Mar 06 2012 Andrey Bondrov <abondrov@mandriva.org> 0.13-1
++ Revision: 782441
+- imported package griffith
+
