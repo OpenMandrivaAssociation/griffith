@@ -3,7 +3,7 @@
 Summary:	Film collection manager application
 Name:		griffith
 Version:	0.13
-Release:	%mkrel 1
+Release:	1.1
 License:	GPLv2
 Group:		Databases
 URL:		http://griffith.cc/
@@ -20,7 +20,6 @@ Requires:	python-imaging
 Requires:	python-reportlab >= 1.19
 Requires:	python-sqlite2
 Requires:	python-sqlalchemy
-Requires:	python-pyxml
 Requires:	pygtk2.0-libglade
 Requires:	xpdf
 
@@ -37,7 +36,6 @@ from the Web.
 %build
 
 %install
-%__rm -rf %{buildroot}
 %makeinstall_std
 
 %__rm -f %{buildroot}%{_bindir}/%{name}
@@ -58,9 +56,6 @@ desktop-file-install --vendor="" \
 
 %find_lang %{name} --with-man
 
-%clean
-%__rm -rf %{buildroot}
-
 %files -f %{name}.lang
 %doc AUTHORS ChangeLog COPYING README INSTALL NEWS TODO *.extra-artwork
 %{_bindir}/%{name}
@@ -69,11 +64,3 @@ desktop-file-install --vendor="" \
 %{_datadir}/pixmaps/*
 %{_mandir}/man1/griffith.1.*
 %config(noreplace) %{_sysconfdir}/bash_completion.d/griffith
-
-
-
-%changelog
-* Tue Mar 06 2012 Andrey Bondrov <abondrov@mandriva.org> 0.13-1
-+ Revision: 782441
-- imported package griffith
-
