@@ -3,7 +3,7 @@
 Summary:	Film collection manager application
 Name:		griffith
 Version:	0.13
-Release:	2
+Release:	3
 License:	GPLv2
 Group:		Databases
 URL:		http://griffith.cc/
