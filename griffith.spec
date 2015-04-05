@@ -9,6 +9,7 @@ Group:		Databases
 URL:		http://griffith.cc/
 Source:		http://download.berlios.de/griffith/%{name}-%{version}.tar.gz
 Source1:	http://download.berlios.de/griffith/%{name}-extra-artwork-%{_version_art}.tar.gz
+Patch0:         griffith-0.13-InstrumentationManager.patch
 BuildArch:	noarch
 BuildRequires:	docbook-utils
 BuildRequires:	python-sqlalchemy
@@ -31,6 +32,7 @@ from the Web.
 
 %prep
 %setup -q -a 1
+%patch0 -p1
 %__mv %{name}-extra-artwork-%{_version_art} extra-artwork
 
 %build
