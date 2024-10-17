@@ -6,7 +6,7 @@ Version:	0.13
 Release:	3
 License:	GPLv2
 Group:		Databases
-URL:		http://griffith.cc/
+URL:		https://griffith.cc/
 Source:		http://download.berlios.de/griffith/%{name}-%{version}.tar.gz
 Source1:	http://download.berlios.de/griffith/%{name}-extra-artwork-%{_version_art}.tar.gz
 Patch0:         griffith-0.13-InstrumentationManager.patch
